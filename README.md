@@ -22,9 +22,9 @@ fair_value = family_mid + product_offset
 residual = current_mid - fair_value
 ```
 
-1. If the residual is above the product’s threshold, the product is treated as expensive and the strategy shorts it.
-2. If the residual is below the negative threshold, the product is treated as cheap and the strategy buys it.
-3. If the residual is inside the threshold band, the strategy keeps the existing inventory rather than forcing a flat exit.
+5. If the residual is above the product’s threshold, the product is treated as expensive and the strategy shorts it.
+6. If the residual is below the negative threshold, the product is treated as cheap and the strategy buys it.
+7. If the residual is inside the threshold band, the strategy keeps the existing inventory rather than forcing a flat exit.
 
 ## Technical Highlights
 
