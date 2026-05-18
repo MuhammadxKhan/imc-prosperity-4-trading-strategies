@@ -20,20 +20,12 @@ For each family:
 ```python
 fair_value = family_mid + product_offset
 residual = current_mid - fair_value
-
+```
 
 1. If the residual is above the product’s threshold, the product is treated as expensive and the strategy shorts it.
 2. If the residual is below the negative threshold, the product is treated as cheap and the strategy buys it.
 3. If the residual is inside the threshold band, the strategy keeps the existing inventory rather than forcing a flat exit.
 
-
-That last point is important because your code explicitly says flattening inside the dead zone was a bug in a previous version. :contentReference[oaicite:5]{index=5}
-
-## Better “Technical Highlights” section
-
-Use:
-
-```md
 ## Technical Highlights
 
 - Implemented a static relative-value model across 10 product families, each containing five related instruments.
